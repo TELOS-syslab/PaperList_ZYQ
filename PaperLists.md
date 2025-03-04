@@ -12,6 +12,10 @@
 | ATC 22' | RunD | [RunD: A Lightweight Secure Container Runtime for High-density Deployment and High-concurrency Startup in Serverless Computing](https://www.usenix.org/conference/atc22/presentation/li-zijun-rund) |  |
 | ATC 20' | Faaslets | [Faasm: Lightweight Isolation for Efficient Stateful Serverless Computing](https://www.usenix.org/conference/atc20/presentation/shillaker) | Use WebAssembly as container |
 | ATC 18' | SOCK | [SOCK: Rapid Task Provisioning with Serverless-Optimized Containers](https://www.usenix.org/conference/atc18/presentation/oakes) |  |
+| ASPLOS 21' | REAP | [Benchmarking, analysis, and optimization of serverless function snapshots](https://dl.acm.org/doi/abs/10.1145/3445814.3446714) | Using snapshot to optimize cold start |
+| OSDI 24' | Sabre | [Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs](https://www.usenix.org/conference/osdi24/presentation/lazarev) | Using Intel to accelerate building and loading snapshot |
+| ASPLOS 21' | FaasCache | [FaasCache: keeping serverless computing alive with greedy-dual caching](https://dl.acm.org/doi/10.1145/3445814.3446757) | Adding cache replacment and prefetch mechanism to serverless keep-alive. Avoid some cold starts |
+| ASPLOS 23' | AQUATOPE | [AQUATOPE: QoS-and-Uncertainty-Aware Resource Management for Multi-stage Serverless Workflows](https://dl.acm.org/doi/10.1145/3567955.3567960) | Using reinforcement learning to prewarm serverless functions |
 
 # Runtime 
 | Cite | Nickname  | Paper |General Idea |
@@ -34,6 +38,7 @@
 |:---:      |  :--- |:---:  |:---:  |
 | SIGCOMM 22' | SPRIGHT | [SPRIGHT: Extracting the Server from Serverless Computing! High-performance eBPF-based Event-driven, Shared-memory Processing](https://dl.acm.org/doi/10.1145/3544216.3544259) | Download Kubernet communication service to eBPF |
 | EuroSys 24' | RMMAP | [Serialization/Deserialization-free State Transfer in Serverless Workflows](https://dl.acm.org/doi/10.1145/3627703.3629568) | RDMA |
+| ASPLOS 21' | Nightcore | [Nightcore: efficient and scalable serverless computing for latency-sensitive, interactive microservices](https://dl.acm.org/doi/10.1145/3445814.3446701) | A runtime can run multi-serverless-functions in the same VM making communication faster |
 | ATC 20' | Faaslets | [Faasm: Lightweight Isolation for Efficient Stateful Serverless Computing](https://www.usenix.org/conference/atc20/presentation/shillaker) | Shared memory |
 |  |  |  |  |
 
@@ -41,4 +46,4 @@
 | Cite | Nickname  | Paper |General Idea |
 |:---:      |   :----------- |:---:  |:---:  |
 | ATC 24' | Alps | [Alps: An Adaptive Learning, Priority OS Scheduler for Serverless Function](https://www.usenix.org/conference/atc24/presentation/fu) |  |
-|  |  |  |  |
+| SOSP 21' | Harvest | [Faster and Cheaper Serverless Computing on Harvested Resources](https://dl.acm.org/doi/10.1145/3477132.3483580) | Using Harvest VM to run serverless functions |
