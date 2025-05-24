@@ -6,6 +6,7 @@
 # Cold start
 | Cite | Nickname  | Paper |General Idea |
 |:---:      |   :----------- |:---:  |:---:  |
+| Eurosys 25'| Alloystack | [AlloyStack: A Library Operating System for Serverless Workflow Applications](https://dl.acm.org/doi/10.1145/3689031.3717490) | The LibOS work |
 | OSDI 23' | Mitos | [No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing]() | Remote docker fork. |
 | SOSP24' | SigmaOS | [Unifying serverless and microservice tasks with SigmaOS](https://dl.acm.org/doi/10.1145/3694715.3695947) |  |
 | ASPLOS 20' | Catalyzer | [Catalyzer: Sub-millisecond Startup for Serverless Computing with Initialization-less Booting](https://dl.acm.org/doi/10.1145/3373376.3378512) |  |
@@ -16,11 +17,13 @@
 | OSDI 24' | Sabre | [Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs](https://www.usenix.org/conference/osdi24/presentation/lazarev) | Using Intel to accelerate building and loading snapshot |
 | ASPLOS 21' | FaasCache | [FaasCache: keeping serverless computing alive with greedy-dual caching](https://dl.acm.org/doi/10.1145/3445814.3446757) | Adding cache replacment and prefetch mechanism to serverless keep-alive. Avoid some cold starts |
 | ASPLOS 23' | AQUATOPE | [AQUATOPE: QoS-and-Uncertainty-Aware Resource Management for Multi-stage Serverless Workflows](https://dl.acm.org/doi/10.1145/3567955.3567960) | Using reinforcement learning to prewarm serverless functions |
+| ASPLOS 24' | RainbowCake | [RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing](https://dl.acm.org/doi/10.1145/3617232.3624871) | Container caching and sharing. |
 
 # Runtime 
 | Cite | Nickname  | Paper |General Idea |
 |:---:      |   :--------- |:---:  |:---:  |
 | ASPLOS 24' | FaaSMem | [FaaSMem: Improving Memory Efficiency of Serverless Computing with Memory Pool Architecture](https://dl.acm.org/doi/10.1145/3620666.3651355) |  |
+| SOSP 23' | XFaaS | [XFaaS: Hyperscale and Low Cost Serverless Functions at Meta](https://dl.acm.org/doi/10.1145/3600006.3613155) | Meta's serverless system framework |
 | ISCA 22' | Jukebox | [Lukewarm serverless functions: characterization and optimization](https://dl.acm.org/doi/10.1145/3470496.3527390) | L2 cache prefetch |
 
 # Fault tolerance
@@ -42,8 +45,23 @@
 | ATC 20' | Faaslets | [Faasm: Lightweight Isolation for Efficient Stateful Serverless Computing](https://www.usenix.org/conference/atc20/presentation/shillaker) | Shared memory |
 |  |  |  |  |
 
-# Scheduling
+# Resorce Scheduling
 | Cite | Nickname  | Paper |General Idea |
 |:---:      |   :----------- |:---:  |:---:  |
 | ATC 24' | Alps | [Alps: An Adaptive Learning, Priority OS Scheduler for Serverless Function](https://www.usenix.org/conference/atc24/presentation/fu) |  |
+| Eurosys 23' |  Bayesian | [With Great Freedom Comes Great Opportunity: Rethinking Resource Allocation for Serverless Functions](https://dl.acm.org/doi/abs/10.1145/3552326.3567506) |  |
 | SOSP 21' | Harvest | [Faster and Cheaper Serverless Computing on Harvested Resources](https://dl.acm.org/doi/10.1145/3477132.3483580) | Using Harvest VM to run serverless functions |
+| HPCA 20'| CLITE | [CLITE: Efficient and QoS-Aware Co-location of Multiple Latency-Critical Jobs for Warehouse Scale Computers](https://ieeexplore.ieee.org/abstract/document/9065583)| |
+
+
+# End to end
+| Cite | Nickname  | Paper |General Idea |
+|:---:      |   :----------- |:---:  |:---:  |
+|  | FaaSLight | [FaaSLight: General Application-level Cold-start Latency Optimization for Function-as-a-Service in Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3585007?mi=kthjst&af=R&AllField=PubIdSortField%3A%281049-331X%29&content=standard&expand=dl&sortBy=EpubDate_desc&target=advanced) | Automatic detect and remove redundant libraries and code in your application to improve end-to-end latency. |
+|  |  |  |  |
+
+# Storage
+| Cite | Nickname  | Paper |General Idea |
+|:---:      |   :----------- |:---:  |:---:  |
+| OSDI 18' | Pocket | [Pocket: Elastic Ephemeral Storage for Serverless Analytics](https://www.usenix.org/conference/osdi18/presentation/klimovic) |  |
+| PODS 21' | PolarDB | [PolarDB Serverless: A Cloud Native Database for Disaggregated Data Centers](https://dl.acm.org/doi/10.1145/3448016.3457560) |  |
