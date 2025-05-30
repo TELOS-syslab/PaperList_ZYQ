@@ -60,6 +60,14 @@
 |  | FaaSLight | [FaaSLight: General Application-level Cold-start Latency Optimization for Function-as-a-Service in Serverless Computing](https://dl.acm.org/doi/abs/10.1145/3585007?mi=kthjst&af=R&AllField=PubIdSortField%3A%281049-331X%29&content=standard&expand=dl&sortBy=EpubDate_desc&target=advanced) | Automatic detect and remove redundant libraries and code in your application to improve end-to-end latency. |
 |  |  |  |  |
 
+# Optimization for Chaining
+| Cite | Nickname  | Paper |General Idea |
+|:---:      |   :----------- |:---:  |:---:  |
+| Eurosys 23' | Palette | [Palette Load Balancing: Locality Hints for Serverless Functions](https://dl.acm.org/doi/abs/10.1145/3552326.3567496) | Using coloring to make serverless start have more locality reuse. |
+| Socc 20' | Wukong |  | Wukong modifies the Dask scheduler to find chains of tasks that can be executed on the same node, and sends these sections of the graph to the same function instance. |
+| ATC 21' | SONIC | [SONIC: Application-aware data passing for chained serverless applications.](https://www.usenix.org/conference/atc21/presentation/mahgoub) | SONIC selects how to best transfer data among stages of a DAG, and does data-aware function placement, based on its knowledge of the DAG. |
+|  |  |  |  |
+
 # Storage
 | Cite | Nickname  | Paper |General Idea |
 |:---:      |   :----------- |:---:  |:---:  |
