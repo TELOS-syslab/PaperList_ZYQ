@@ -13,6 +13,7 @@
 | ATC 22' | RunD | [RunD: A Lightweight Secure Container Runtime for High-density Deployment and High-concurrency Startup in Serverless Computing](https://www.usenix.org/conference/atc22/presentation/li-zijun-rund) |  |
 | ATC 20' | Faaslets | [Faasm: Lightweight Isolation for Efficient Stateful Serverless Computing](https://www.usenix.org/conference/atc20/presentation/shillaker) | Use WebAssembly as container |
 | ATC 18' | SOCK | [SOCK: Rapid Task Provisioning with Serverless-Optimized Containers](https://www.usenix.org/conference/atc18/presentation/oakes) |  |
+| Eurosys 20' | SEUSS | [SEUSS: skip redundant paths to make serverless fast](https://dl.acm.org/doi/10.1145/3342195.3392698) | The snapshot mechanism for unikernel serverless runtime. Their key insight is that shapshot reduced the preparation for environment and runtime init which enables optimizations to squash redundancy. |
 | ASPLOS 21' | REAP | [Benchmarking, analysis, and optimization of serverless function snapshots](https://dl.acm.org/doi/abs/10.1145/3445814.3446714) | Using snapshot to optimize cold start |
 | OSDI 24' | Sabre | [Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs](https://www.usenix.org/conference/osdi24/presentation/lazarev) | Using Intel to accelerate building and loading snapshot |
 | ASPLOS 21' | FaasCache | [FaasCache: keeping serverless computing alive with greedy-dual caching](https://dl.acm.org/doi/10.1145/3445814.3446757) | Adding cache replacment and prefetch mechanism to serverless keep-alive. Avoid some cold starts |
